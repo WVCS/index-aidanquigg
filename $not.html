@@ -1,14 +1,13 @@
 <html>
   <body>
-    <table style="width:25%">
-  <tr>
-    <th>Aidan Quigg</th>
-    <th>Web Design</th>
-    <th> P. 3 </th>
-  </tr>
-    </table>
+     <ul>
+  <li><a href="https://wvcs.github.io/index-aidanquigg/">Home</a></li>
+  <li><a href="https://wvcs.github.io/index-aidanquigg/$not.html">$NOT</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" <a href="#Aidan Quigg">Aidan Quigg</a></li>
+</ul>
     <h1> <img src="https://media.giphy.com/media/RN8WemgQQI9a1q8DbA/giphy.gif"> </h1>
-    <h2> Biography </h2>
+    <h2 class="Header"> Biography </h2>
     <h3> Edy Edouard, known professionally as Snot (stylized as $NOT), is an American rapper, singer and songwriter. Born in New York $NOT started his career in 2016 not reaching relevance until 2018 with hit his song "GOSHA" </h3>
     
   <table style="width:50%">
@@ -48,22 +47,64 @@
     <td>ROADRUNNER</td>
     <td>2020</td>
   </tr>
+    <div class="abs">
+    <p> <img src="https://i1.sndcdn.com/artworks-000652914610-ohpi5k-t500x500.jpg" style="width:300px;height:280px;"> </p>
+  </div>
+    <div class="photo">
+    <p> <img src="https://i.pinimg.com/originals/c4/bf/9f/c4bf9f98055e518623195d51978f4b8e.jpg" style="width:300px;height:350px;"> </p>
+  </div>
   </body>
-  <style>
-    body{
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F88736;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #FC7A1E;
+}
+body{
   background-color: #686963;
 }
 table {
-  border-spacing: 5px;
-  border-collapse: collapse
-   
-}
-table, th, td{
-  Border: 1px Solid White;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  
+  }
+
+td, th {
+  border: 0px solid #FC7A1E;
+  text-align: left;
+  padding: 5px;
+  color: white;
+  
 }
 th{
-  color: white;
-    font-size: 20px;
+  text-align: Center;
+}
+tr:nth-child(even) {
+  background-color: #FC7A1E;
+}
+tr:nth-child(odd) {
+  background-color: #F88736;
 }
 h1{
   text-align: Center;
@@ -74,17 +115,33 @@ h2{
   color: white;
     text-decoration: bold;
 }
+.Header{ font-size: 30px;
+  
+}
 h3{
   color: white;
   text-align: center;
 }
-td{
- color: white;
+div.abs {
+  position: absolute;
+  
+  right: 376px;
+  top: 555px;
+  width: 300px;
+    height:  100px ;
+ 
+  text-align: center;
 }
-
-    
-    
-    </Style>
-    
-    
+div.photo{
+  position: absolute;
+  
+  right: 50px;
+  top: 520px;
+  width: 300px;
+    height:  100px ;
+ 
+  text-align: center;
+}
+</style>
+  
 </html>
