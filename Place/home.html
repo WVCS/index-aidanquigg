@@ -1,0 +1,356 @@
+<html>
+  <body>
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="$not.html">$NOT</a></li>
+  <li><a href="Convince/Home.html">Convince</a></li>
+  <li><a href="food/home.html">Ice Cream</a></li>
+  <li><a href="#Coachella">Coachella</a></li>
+  <li><a href="#BandGeeks">Band Geeks</a></li>
+  <li style="float:right"><a class="active" <a href="#Aidan Quigg">Aidan Quigg</a></li>
+  </ul>
+<div class="Logo">
+  <img src="https://www.raysmtb.com/wp-content/uploads/2018/09/rayslogo-1.png">
+</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://lh3.googleusercontent.com/proxy/YiHyfBIilQV5yOlZAY7PVLn6i1Y00HdrFvJlH2wNknkdSgE7KiPJ-lWe8hM0zZVJywJTn54gWCScDmqK3VoNNh5KTPtR5oQV81PmL5VxPZD63ptjSyXfywdV0yiY4DTMQ7eeT5RQZuf0JD9DHo4p7JzUNRSHdWpS6PY_VrLOAoDBOQ" style="width:100%">
+    <div class="text">Overview</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="http://ep1.pinkbike.org/p4pb6614222/p4pb6614222.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="http://archive.jsonline.com/images.ashx?file=28007154_Sport%20Course.jpg&resize=" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+   <div class="r1">
+  <div class="box a"> 
+   <h2> Rays Mountain Bike Park is the worlds first indoor mountain bike park. Built in 2004 the indoor park has been adding features left and right to meet the needs and wants of the community. The park has many sections involving a technical section, pump track, jump section, and a 2 tier path going all the way around the park. </h2>
+    </div>
+  </div>
+<div class="r2">
+  <div class="box c">
+    <h2> Welcome</h2>
+    <p> Way back on a cold, wet and nasty Thanksgiving weekend in 1996 I had a crazy dream-“Let’s get an old factory building and build an indoor mountain bike paradise!” That dream came to life Thanksgiving weekend 2004. It’s hard to believe but it’s the start of our 14th season. It’s been a long, hard and fun ride. Through the years we’ve tried to build a fun experience for every level of rider with a fun family atmosphere. I hope you will come and check us out. We’re always working hard making a better park for you! Hope to see you at the park! Thanks for being a part of the dream. </p>
+    <p> - Ray </p>
+  </div>
+  <div class="box d">
+    <h2> Seasons </h2>
+    <p> Due to COVID 19 we are not sadly open right now. We are working around the clock to try and get things back up and running. Thank you for understanding.</p>
+    </div>
+</div>
+<div class="r3">
+  <div class="box e">
+    <h2> Location </h2>
+    <h3> 9801 Walford Ave.
+Cleveland, OH 44102  </h3>
+    <h4> Call: 216-631-7433 </h4>
+  </div>
+  <div class="box f">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/u6Ni8SMxVCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<button onclick="topFunction()" id="topBtn"> BACK TO TOP </button>
+  </body>
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {hideFunction()};
+
+function hideFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+    document.getElementById("topBtn").style.display = "block";
+  else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #34415B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+li a:hover {
+  background-color: #525D76;
+}
+body{
+  background-color: #686963;
+}
+.Logo{
+  text-align: center;
+  
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #686963;
+  color: #blue;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+  .a {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    background-color: #686963;
+    border: 5px solid #34415B;
+    color: white;
+    text-align: center;
+  }
+.b {
+    grid-column: 6 / 9;
+    grid-row: 1;
+    background-color: #686963;
+
+    color: white;
+  text-align: center;
+  }
+.c {
+    grid-column: 1 / 6;
+    grid-row: 2;
+    background-color: #686963;
+  border: 5px solid #34415B;
+    color: white;
+  text-align: center;
+  }
+.d {
+    grid-column: 1 / 6;
+    grid-row: 4;
+    background-color:#686963 ;
+  border: 5px solid #34415B;
+    color: white;
+  text-align: center;
+  }
+.e {
+    grid-column: 6 / 9;
+    grid-row: 4;
+    background-color: #686963;
+  border: 5px solid #34415B;
+    color: white;
+  text-align: center;
+  }
+.f {
+    grid-column: 6 / 9;
+    grid-row: 2;
+    background-color: #686963;
+    color: #91D0D7;
+  text-align: center;
+  }
+.design{
+  text-aling: center;
+  Position: absolute;
+  
+}
+.r1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.r2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.r3{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  font-size: 15px;
+  background-color: #34415B;
+  color:white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#topBtn:hover {
+  border: none;
+  border-radius: 5px;
+}
+
+@media 
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+  
+</html> 
