@@ -1,0 +1,379 @@
+<html>
+  <body>
+    <ul>
+  <li><a href="index.html">Home</a></li>
+   
+  <li style="float:right"><a class="active" <a href="#Aidan Quigg">Shopping Cart</a></li>
+  </ul>
+
+<form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;float:right;">
+    <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+  </div>
+</form>
+
+<div class="Logo">
+  <img src="https://freepngimg.com/thumb/tiger/35500-3-tiger-face.png" Style="width:25%" >
+</div>
+
+   <div class="r1">
+  <div class="box a"> 
+   <h2> Big Cats is an all envoronmentally safe clothing company that gives 100% of the proceeds to helping put big cats back into the wild. </h2>
+    </div>
+  </div>
+
+  <div class="box f">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UiFjONQDHNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="https://cdn.mos.cms.futurecdn.net/YB6aQqKZBVjtt3PuDSkJKe.jpg">
+    <img src="https://d2u0y5401q13uw.cloudfront.net/media/catalog/product/n/o/no-regrets_mockup_front_wrinkled_asphalt_1.jpg">
+    
+  </div>
+  <div class="column">
+    <img src="https://render.fineartamerica.com/images/rendered/default/t-shirt/23/30/images/artworkimages/medium/1/black-and-white-lion-head-marian-voicu-transparent.png?targetx=-1&targety=-1&imagewidth=430&imageheight=428&modelwidth=430&modelheight=575">
+    <img src="https://www.goway.com/media/cache/aa/79/aa79264f49aae4d4b2d77f0abdeb16fc.jpg">
+    
+  </div>
+  <div class="column">
+    <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/cheetah_16x9.jpg?itok=JefwcV8R">
+    <img src="https://ih1.redbubble.net/image.251268589.5883/ra,kids_tee,x1250,FFFFFF:97ab1c12de,front-pad,1000x1000,f8f8f8.jpg">
+    
+  </div>
+  
+</div>
+<button onclick="topFunction()" id="topBtn"> BACK TO TOP </button>
+  </body>
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #34415B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+li a:hover {
+  background-color: #525D76;
+}
+body{
+  background-color: #686963;
+}
+.Logo{
+  text-align: center;
+  
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #686963;
+  color: #blue;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+  .a {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    background-color: #686963;
+    border: 5px solid #34415B;
+    color: white;
+    text-align: center;
+  }
+.b {
+    grid-column: 6 / 9;
+    grid-row: 1;
+    background-color: #686963;
+
+    color: white;
+  text-align: center;
+  }
+.c {
+    grid-column: 1 / 6;
+    grid-row: 2;
+    background-color: #686963;
+  border: 5px solid #34415B;
+    color: white;
+  text-align: center;
+  }
+.d {
+    grid-column: 1 / 6;
+    grid-row: 4;
+    background-color:#686963 ;
+  border: 5px solid #34415B;
+    color: white;
+  text-align: center;
+  }
+.e {
+    grid-column: 6 / 9;
+    grid-row: 4;
+    background-color: #686963;
+  border: 5px solid #34415B;
+    color: white;
+  text-align: center;
+  }
+.f {
+    grid-column: 6 / 9;
+    grid-row: 2;
+    background-color: #686963;
+    color: #91D0D7;
+  text-align: center;
+  }
+.design{
+  text-aling: center;
+  Position: absolute;
+  
+}
+.r1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.r2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.r3{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  font-size: 15px;
+  background-color: #34415B;
+  color:white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#topBtn:hover {
+  border: none;
+  border-radius: 5px;
+}
+
+@media 
+  * {box-sizing:border-box}
+.row {
+  align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  
+}
+
+/* Style the links inside the navigation bar */
+.autocomplete a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: pink;
+}
+
+/* Style the search box inside the navigation bar */
+.autocomplete input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .autocomplete a, .autocomplete input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .autocomplete input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+</style>
+  <script>
+    function topFunction() {
+  document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {hideFunction()};
+
+function hideFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+    document.getElementById("topBtn").style.display = "block";
+  else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+function autocomplete(inp, arr) {
+
+  var currentFocus;
+
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+
+      this.parentNode.appendChild(a);
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function(e) {
+
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+var countries = ["Lions", "Tigers", "Cheetahs", "Shirts", "Products", "Cats", "Big Cats", "Animals", "9", "10", "11", "12",];
+
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+</html> 
